@@ -1,0 +1,41 @@
+{
+  "name": "laravel-notification-channels/textmagic",
+  "description": "This package makes it easy to send notifications using textmagic with Laravel 5.3",
+  "homepage": "https://github.com/laravel-notification-channels/textmagic",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jozef Balun",
+      "email": "jozef.balun@pixwell.sk",
+      "homepage": "http://pixwell.sk",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.6.4",
+    "illuminate/notifications": "^5.3",
+    "illuminate/support": "^5.1|^5.2|^5.3",
+    "guzzlehttp/guzzle": "^6.2"
+  },
+  "require-dev": {
+    "mockery/mockery": "^0.9.5",
+    "phpunit/phpunit": "4.*",
+    "orchestra/testbench": "3.3.x-dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "NotificationChannels\\TextMagic\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "NotificationChannels\\TextMagic\\Test\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
